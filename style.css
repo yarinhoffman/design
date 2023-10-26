@@ -1,0 +1,43 @@
+/* .container > p {
+    font-size: x-large;
+    padding: 10px;
+    border: solid black;
+    display: inline-block; /* Display paragraphs inline 
+}
+p:nth-child(1){
+    color: red;
+}
+p:nth-child(2){
+    color: yellow;
+}
+p:nth-child(3){
+    color: green;
+} */
+.container {
+    width: 100%; /* Set an appropriate width for the container */
+  }
+  
+  .container > p {
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+    border: solid black;
+    display: inline-block;
+    margin: 0; /* Remove any default margins */
+    width: calc(33.33% - 20px); /* Set the width for each paragraph */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    margin-right: 10px;
+}
+  
+  p:nth-child(1) {
+    color: red;
+  }
+  
+  p:nth-child(2) {
+    color: yellow;
+  }
+  
+  p:nth-child(3) {
+    color: green;
+  }
+  
